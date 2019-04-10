@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "Mayck Coelho",
-  "license": "",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.16.4"
   }

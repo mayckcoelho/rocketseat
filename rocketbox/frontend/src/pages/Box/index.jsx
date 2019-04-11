@@ -32,6 +32,7 @@ export default class Box extends Component {
 
         io.on('file', data => {
             console.log(data);
+            this.setState({ box: { ...this.state.box, files: [ data, ...this.state.box.files ] } })
         });
     }
 
@@ -40,8 +41,7 @@ export default class Box extends Component {
             const data = new FormData();
 
             data.append('file', file);
-            console.log(file)
-            api.post(`boxes/${this.state.box}/files`, data);
+            api.post(`boxes/${this.props.match.params.id}/files`, data);
         });
     }
 

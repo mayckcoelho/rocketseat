@@ -77,7 +77,7 @@ export default class Box extends Component {
   handleUpload = () => {
     ImagePicker.launchImageLibrary({ }, async upload => {
       if (upload.error) {
-        console.log("Image Picker error");
+        console.log(upload.error);
       } else if (upload.didCancel) {
         console.log("Canceled by user");
       } else {

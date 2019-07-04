@@ -16,7 +16,7 @@ io.on('connection', socket => {
     })
 });
 
-mongoose.connect('mongodb+srv://oministack:oministack@cluster0-d6f7i.mongodb.net/oministack?retryWrites=true', {
+mongoose.connect('mongodb+srv://oministack:oministack@cluster0-d6f7i.gcp.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
 });
 

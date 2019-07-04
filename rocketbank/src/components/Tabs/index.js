@@ -8,7 +8,7 @@ const Tabs = ({ translateY }) => {
         <Container style={{
             opacity: translateY.interpolate({
                 inputRange: [0, 380],
-                outputRange: [1, 0.3],
+                outputRange: [1, 0],
                 extrapolate: 'clamp',
             }),
             transform: [{
@@ -21,24 +21,24 @@ const Tabs = ({ translateY }) => {
         }}>
             <TabsContainer>
                 <TabItem>
-                    <Icon name="person-add" size={24} color="#FFF" />
-                    <TabText>Indicar amigos</TabText>
+                    <Icon name="visibility" size={24} color="#FFF" />
+                    <TabText>Visualizar averbações</TabText>
                 </TabItem>
                 <TabItem>
-                    <Icon name="chat-bubble-outline" size={24} color="#FFF" />
-                    <TabText>Cobrar</TabText>
+                    <Icon name="settings-overscan" size={24} color="#FFF" />
+                    <TabText>Averbar Barcode</TabText>
                 </TabItem>
                 <TabItem>
-                    <Icon name="arrow-downward" size={24} color="#FFF" />
-                    <TabText>Depositar</TabText>
+                    <Icon name="insert-drive-file" size={24} color="#FFF" />
+                    <TabText>Averbar Manual</TabText>
                 </TabItem>
                 <TabItem>
-                    <Icon name="arrow-upward" size={24} color="#FFF" />
-                    <TabText>Transferir</TabText>
+                    <Icon name="not-interested" size={24} color="#FFF" />
+                    <TabText>Encerrar Viagem</TabText>
                 </TabItem>
                 <TabItem>
-                    <Icon name="lock" size={24} color="#FFF" />
-                    <TabText>Bloquear cartão</TabText>
+                    <Icon name="cancel" size={24} color="#FFF" />
+                    <TabText>Cancelar Viagem</TabText>
                 </TabItem>
             </TabsContainer>
         </Container>

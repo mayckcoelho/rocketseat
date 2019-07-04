@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import logo from '../../assets/Nubank_Logo.png'
+import logo from '../../assets/icon_push.png'
 import { Container, Top, Logo, Title } from './styles';
 
 const Header = () => {
@@ -9,7 +9,7 @@ const Header = () => {
         <Container>
             <Top>
                 <Logo source={logo} />
-                <Title>Mayck</Title>
+                <Title>Lucas Carvalho</Title>
             </Top>
             <Icon name="keyboard-arrow-down" size={20} color="#FFF"/>
         </Container>

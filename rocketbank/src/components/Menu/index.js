@@ -14,9 +14,9 @@ const Menu = ({ translateY }) =>
         <Code>
             <QRCode 
                 value="https://github.com/mayckcoelho/rocketseat"
-                size={80}
+                size={60}
                 fgColor="#FFF"
-                bgColor="#8B10AE"/>
+                bgColor="#01318C"/>
         </Code>
 
         <Nav>
@@ -25,12 +25,16 @@ const Menu = ({ translateY }) =>
                 <NavText>Me ajuda</NavText>
             </NavItem>
             <NavItem>
-                <Icon name="person-outline" size={20} color="#FFF" />
-                <NavText>Perfil</NavText>
+                <Icon name="chat" size={20} color="#FFF" />
+                <NavText>Termos de uso</NavText>
             </NavItem>
             <NavItem>
-                <Icon name="credit-card" size={20} color="#FFF" />
-                <NavText>Configurar cartão</NavText>
+                <Icon name="not-interested" size={20} color="#FFF" />
+                <NavText>Cancelar viagem</NavText>
+            </NavItem>
+            <NavItem>
+                <Icon name="person-outline" size={20} color="#FFF" />
+                <NavText>Perfil</NavText>
             </NavItem>
             <NavItem>
                 <Icon name="smartphone" size={20} color="#FFF" />

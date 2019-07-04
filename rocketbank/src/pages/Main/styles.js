@@ -4,7 +4,7 @@ import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
 export const Container = styled.View`
   flex: 1;
-  background: #8b10AE;
+  background: #01318C;
   padding-top: ${getStatusBarHeight()}px;
   justify-content: center;
 `;
@@ -42,9 +42,12 @@ export const CardContent = styled.View`
 `;
 
 export const CardFooter = styled.View`
+  flex-direction: row;
   padding: 30px;
   background: #eee;
   border-radius: 4px;
+  justify-content: flex-start;
+  align-items: center;
 `;
 
 export const Title = styled.Text`
@@ -55,10 +58,11 @@ export const Title = styled.Text`
 export const Description = styled.Text`
   font-size: 32px;
   margin-top: 3px;
-  color: #333;
+  color: #39aa23;
 `;
 
 export const Annotation = styled.Text`
-  font-size: 12px;
+  font-size: 14px;
+  margin-left: 10px;
   color: #333;
 `;

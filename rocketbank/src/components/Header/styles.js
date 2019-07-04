@@ -11,11 +11,15 @@ export const Top = styled.View`
     margin-bottom: 10px;
 `;
 
-export const Logo = styled.Image``;
+export const Logo = styled.Image`
+    background: #FFF;
+    border-radius: 10px;
+`;
 
 export const Title = styled.Text`
+
     font-size: 18px;
     color: #FFF;
     font-weight: bold;
-    margin-left: 8px;
+    margin-left: 18px;
 `;

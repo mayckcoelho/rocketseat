@@ -47,11 +47,11 @@ const Main = () => {
             }
 
             Animated.timing(translateY, {
-                toValue: opened ? 380 : 0,
+                toValue: opened ? 480 : 0,
                 duration: 200,
                 useNativeDriver: true,
             }).start(() => {
-                offset = opened ? 380 : 0;
+                offset = opened ? 480 : 0;
                 translateY.setOffset(offset);
                 translateY.setValue(0);
             });
@@ -72,23 +72,25 @@ const Main = () => {
                 <Card style={{
                     transform: [{
                         translateY: translateY.interpolate({
-                            inputRange: [-350, 0, 380],
-                            outputRange: [-50, 0, 380],
+                            inputRange: [-450, 0, 480],
+                            outputRange: [-50, 0, 480],
                             extrapolate: 'clamp',
                         }),
                     }]
                 }}>
                     <CardHeader>
-                        <Icon name="attach-money" size={28} color="#666" />
-                        <Icon name="visibility-off" size={28} color="#666" />
+                        {/* <Icon name="attach-money" size={28} color="#666" /> */}
+                        <Annotation>Veículo: FAE6668</Annotation>
+                        <Icon name="timeline" size={28} color="#666" />
                     </CardHeader>
                     <CardContent>
-                        <Title>Saldo disponível</Title>
+                        <Title>Valor em Transporte</Title>
                         <Description>R$ 220.611,65</Description>
                     </CardContent>
                     <CardFooter>
+                        <Icon name="query-builder" size={28} color="#666" />
                         <Annotation>
-                            Trasferência de R$ 20,00 recebida de Diego Scheel Fernandes hoje às 06:00h
+                            Viagem iniciada à 32 minutos
                         </Annotation>
                     </CardFooter>
                 </Card>
